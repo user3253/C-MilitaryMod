@@ -1,8 +1,8 @@
 #the mod name as displayed in-game
-displayName: "Fighters"
+displayName: "military"
 
 #the internal name of your mod
-name: "fighters"
+name: "Military"
 
 #your name
 author: "CYC"
