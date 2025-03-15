@@ -1,20 +1,20 @@
 #the mod name as displayed in-game
-displayName: "military"
+displayName: "C-Military"
 
 #the internal name of your mod
 name: "Military"
 
 #your name
-author: "CYC"
+author: ""
 
 #the fully qualified main class of the mod
 main: "ModMain"
 
 #the mod description as seen in the mod dialog
-description: ""
+description: "Currently, only one unit has been added."
 
 #the mod version
-version: 1.0
+version: 0.1
 
 #the minimum game build required to run this mod
 minGameVersion: 145

@@ -21,7 +21,7 @@ public class FUnitTypes {
             speed = 3f;
             rotateSpeed = 1f;
             accel = 0.005f;
-            drag = 0.005f;
+            drag = 0.002f;
             loopSound = FSounds.B2flying;
             flying = true;
             hitSize = 75f;
@@ -58,14 +58,16 @@ public class FUnitTypes {
                             collidesAir = false;
                             lifetime = 70f;
                             despawnEffect = FFx.Fsmoke;
-                            hitEffect = Fx.massiveExplosion;
                             keepVelocity = false;
                             shrinkX = shrinkY = 0.7f;
-                            speed = 0f;
+                            speed = 0.2f;
                             collides = false;
-                            splashDamage = 220f;
+                            makeFire = true;
+                            incendAmount = 75;
+                            incendSpread = 45;
+                            splashDamage = 800f;
                             splashDamageRadius = 80f;
-                            damage = 250f;
+                            damage = 1500f;
                         }};
                     }}
             );
