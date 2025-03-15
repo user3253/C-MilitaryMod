@@ -1,10 +1,9 @@
 package content;
 
+import arc.graphics.Color;
 import mindustry.content.Fx;
 import mindustry.content.Items;
-import mindustry.content.StatusEffects;
-import mindustry.entities.bullet.BombBulletType;
-import mindustry.gen.Sounds;
+import mindustry.entities.bullet.BasicBulletType;
 import mindustry.gen.UnitEntity;
 import mindustry.type.UnitType;
 import mindustry.type.Weapon;
@@ -17,44 +16,59 @@ public class FUnitTypes {
     public static void load(){
         B2 = new UnitType("B2"){{
             constructor = UnitEntity::create;
-            health = 340;
-            speed = 1.65f;
-            accel = 0.01f;
+            targetable = false;
+            health = 12000;
+            speed = 3f;
+            rotateSpeed = 1f;
+            accel = 0.005f;
             drag = 0.005f;
+            loopSound = FSounds.B2flying;
             flying = true;
             hitSize = 75f;
             targetAir = false;
-            engineOffset = 7.8f;
-            range = 140f;
             faceTarget = false;
-            armor = 3f;
+            range = 140f;
             itemCapacity = 0;
-            targetFlags = new BlockFlag[]{BlockFlag.factory, null};
             circleTarget = true;
+            targetFlags = new BlockFlag[]{BlockFlag.factory, null};
             ammoType = new ItemAmmoType(Items.graphite);
-
-            weapons.add(new Weapon(){{
-                    minShootVelocity = 0.75f;
-                    x = 3f;
-                    shootY = 0f;
-                    reload = 12f;
-                    shootCone = 180f;
-                    ejectEffect = Fx.none;
-                    inaccuracy = 15f;
-                    ignoreRotation = true;
-                    shootSound = Sounds.none;
-                    bullet = new BombBulletType(27f, 25f) {{
-                        width = 10f;
-                        height = 14f;
-                        hitEffect = Fx.flakExplosion;
-                        shootEffect = Fx.none;
-                        smokeEffect = Fx.none;
-
-                        status = StatusEffects.blasted;
-                        statusDuration = 60f;
-                        damage = splashDamage * 0.5f;
-                    }};
-            }});
+            setEnginesMirror(
+                    new UnitEngine(12.5f,-20f,5,62)
+            );
+            weapons.add(
+                    new Weapon(){{
+                        x = 9f;
+                        mirror = true;
+                        alternate = false;
+                        reload = 200f;
+                        shoot.shots = 20;
+                        shoot.shotDelay = 15f;
+                        soundPitchMin = 1f;
+                        shootSound = FSounds.fall;
+                        bullet = new BasicBulletType(){{
+                            sprite = "military-B2missile";
+                            backColor = frontColor = Color.white;
+                            width = height = 45f;
+                            ammoMultiplier = 2;
+                            maxRange = 30f;
+                            ignoreRotation = true;
+                            hitSound = FSounds.bomb;
+                            shootCone = 180f;
+                            hitShake = 10f;
+                            collidesAir = false;
+                            lifetime = 70f;
+                            despawnEffect = FFx.Fsmoke;
+                            hitEffect = Fx.massiveExplosion;
+                            keepVelocity = false;
+                            shrinkX = shrinkY = 0.7f;
+                            speed = 0f;
+                            collides = false;
+                            splashDamage = 220f;
+                            splashDamageRadius = 80f;
+                            damage = 250f;
+                        }};
+                    }}
+            );
         }};
 
     };
