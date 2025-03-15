@@ -1,7 +1,6 @@
-package content;
+package F.content;
 
 import arc.graphics.Color;
-import mindustry.content.Fx;
 import mindustry.content.Items;
 import mindustry.entities.bullet.BasicBulletType;
 import mindustry.gen.UnitEntity;

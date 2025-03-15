@@ -8,7 +8,7 @@ name: "Military"
 author: ""
 
 #the fully qualified main class of the mod
-main: "ModMain"
+main: "F.ModMain"
 
 #the mod description as seen in the mod dialog
 description: "Currently, only one unit has been added."

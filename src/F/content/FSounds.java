@@ -1,4 +1,4 @@
-package content;
+package F.content;
 
 import arc.Core;
 import arc.assets.AssetDescriptor;

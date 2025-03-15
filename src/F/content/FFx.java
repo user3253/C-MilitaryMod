@@ -1,4 +1,4 @@
-package content;
+package F.content;
 
 import arc.graphics.Color;
 import arc.graphics.g2d.*;
