@@ -1,7 +1,7 @@
 displayName: "C-Military"
 name: "Military"
 author: ""
-main: "F.ModMain"
+main: "cmilitary.ModMain"
 description: "Currently, only one unit has been added."
 version: 0.1
 minGameVersion: 145

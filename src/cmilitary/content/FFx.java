@@ -1,4 +1,4 @@
-package F.content;
+package cmilitary.content;
 
 import arc.graphics.Color;
 import arc.graphics.g2d.*;

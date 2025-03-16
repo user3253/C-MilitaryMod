@@ -1,8 +1,8 @@
-package F;
+package cmilitary;
 
-import F.content.FFx;
-import F.content.FSounds;
-import F.content.FUnitTypes;
+import cmilitary.content.FFx;
+import cmilitary.content.FSounds;
+import cmilitary.content.FUnitTypes;
 import mindustry.mod.*;
 
 public class ModMain extends Mod{

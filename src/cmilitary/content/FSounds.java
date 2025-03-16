@@ -1,4 +1,4 @@
-package F.content;
+package cmilitary.content;
 
 import arc.Core;
 import arc.assets.AssetDescriptor;
