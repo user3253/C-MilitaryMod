@@ -1,5 +1,5 @@
 displayName: "C-Military"
-name: "Military"
+name: "military"
 author: ""
 main: "cmilitary.ModMain"
 description: "Currently, only one unit has been added."
