@@ -1,1 +1,1 @@
-A Mindustry mod.
+A Mindustry mod about military.
