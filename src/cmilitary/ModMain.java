@@ -1,6 +1,7 @@
 package cmilitary;
 
 
+import cmilitary.content.FBlocks;
 import cmilitary.content.FFx;
 import cmilitary.content.FSounds;
 import cmilitary.content.FUnitTypes;
@@ -13,6 +14,7 @@ public class ModMain extends Mod{
         FFx.load();
         FSounds.load();
         FUnitTypes.load();
+        FBlocks.load();
     }
 
 }
