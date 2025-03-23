@@ -3,6 +3,6 @@ name: "military"
 author: ""
 main: "cmilitary.ModMain"
 description: "Currently, only one unit has been added."
-version: 0.1
+version: 0.2
 minGameVersion: 145
 java: true
