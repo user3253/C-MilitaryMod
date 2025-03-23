@@ -2,7 +2,7 @@ displayName: "C-Military"
 name: "military"
 author: ""
 main: "cmilitary.ModMain"
-description: ""
+description: "Have 3 contents"
 version: 0.2
 minGameVersion: 145
 java: true
