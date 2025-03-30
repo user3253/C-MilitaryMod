@@ -8,7 +8,7 @@ import mindustry.Vars;
 
 public class FSounds {
     public static Sound
-    open,bomb,fall,B2flying;
+    open,bomb,bomb2,fall,fall2,B2flying,F117flying;
 
 
     protected static Sound loadSound(String fileName) {
@@ -26,7 +26,10 @@ public class FSounds {
     public static void load(){
         open = loadSound("open");
         bomb = loadSound("bomb");
+        bomb2 = loadSound("bomb2");
         fall = loadSound("fall");
+        fall2 = loadSound("fall2");
         B2flying = loadSound("B2flying");
+        F117flying = loadSound("F117flying");
     }
 }
