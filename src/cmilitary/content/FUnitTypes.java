@@ -23,7 +23,7 @@ public class FUnitTypes {
             speed = 3.5f;
             rotateSpeed = 1f;
             accel = 0.005f;
-            drag = 0.002f;
+            drag = 0.004f;
             loopSound = FSounds.B2flying;
             flying = true;
             hitSize = 75f;
@@ -77,11 +77,10 @@ public class FUnitTypes {
 
         F117 = new UnitType("F117"){{
             constructor = UnitEntity::create;
-            targetable = false;
-            health = 12000;
+            health = 21000;
             speed = 3.5f;
             rotateSpeed = 1f;
-            accel = 0.005f;
+            accel = 0.01f;
             drag = 0.002f;
             loopSound = FSounds.F117flying;
             flying = true;
