@@ -77,17 +77,18 @@ public class FUnitTypes {
 
         F117 = new UnitType("F117"){{
             constructor = UnitEntity::create;
-            health = 21000;
-            speed = 3.5f;
-            rotateSpeed = 1f;
+            targetable = false;
+            health = 10500;
+            speed = 3.2f;
+            rotateSpeed = 4f;
             accel = 0.01f;
             drag = 0.002f;
             loopSound = FSounds.F117flying;
             flying = true;
-            hitSize = 75f;
+            hitSize = 63f;
             targetAir = false;
             faceTarget = false;
-            range = 140f;
+            range = 123f;
             itemCapacity = 0;
             circleTarget = true;
             targetFlags = new BlockFlag[]{BlockFlag.factory, null};
@@ -121,7 +122,7 @@ public class FUnitTypes {
                             collides = false;
                             healPercent = 15f;
                             splashDamage = 5000f;
-                            splashDamageRadius = 20f;
+                            splashDamageRadius = 50f;
                             damage = 5500f;
                         }};
                     }}
