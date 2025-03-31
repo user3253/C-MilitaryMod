@@ -1,8 +1,8 @@
 displayName: "C-Military"
 name: "military"
-author: ""
+author: "3253"
 main: "cmilitary.ModMain"
-description: "Have 3 contents"
-version: 0.2
+description: "Gradually updating."
+version: 0.3
 minGameVersion: 145
 java: true
