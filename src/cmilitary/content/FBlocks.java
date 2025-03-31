@@ -31,7 +31,7 @@ public class FBlocks {
             consumePower(180);
             consumeLiquid(Liquids.cryofluid,6f);
             plans = Seq.with(
-                    new UnitPlan(FUnitTypes.B2,60 * 240,with(Items.plastanium,5000,Items.surgeAlloy,8000))
+                    new UnitPlan(FUnitTypes.B2,60 * 240,with(Items.plastanium,5000,Items.surgeAlloy,8000)),
                     new UnitPlan(FUnitTypes.F117,60 * 180,with(Items.silicon, 1000, Items.plastanium, 600, Items.surgeAlloy, 500, Items.phaseFabric, 350))
             );
         }};
