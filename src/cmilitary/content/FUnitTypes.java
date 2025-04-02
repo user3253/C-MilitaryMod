@@ -83,7 +83,7 @@ public class FUnitTypes {
             rotateSpeed = 4f;
             accel = 0.01f;
             drag = 0.002f;
-            loopSound = FSounds.F117flying;
+            //loopSound = FSounds.F117flying;
             flying = true;
             hitSize = 63f;
             targetAir = false;
@@ -101,7 +101,7 @@ public class FUnitTypes {
                         x = y = 0f;
                         mirror = false;
                         reload = 500f;
-                        shootSound = FSounds.fall2;
+                        //shootSound = FSounds.fall2;
                         bullet = new BasicBulletType(){{
                             sprite = "military-F117missile";
                             width = 26f;
